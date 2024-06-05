@@ -5,7 +5,7 @@ namespace Scripts.Infrastructure
 {
     public static class GameLoopEvents 
     {
-        public static Action SpawnCar;
+        public static Action SpawnMainPlayer;
     }
 }
 
