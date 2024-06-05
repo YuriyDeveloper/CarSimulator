@@ -32,7 +32,7 @@ namespace Scripts.Infrastructure
 
         private void SpawnCar()
         {
-            GameLoopEvents.SpawnCar?.Invoke();
+            GameLoopEvents.SpawnMainPlayer?.Invoke();
         }
 
 

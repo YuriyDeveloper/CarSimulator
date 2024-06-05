@@ -12,7 +12,6 @@ namespace Scripts.Infrastructure
             BindGameStateMachine();
             BindSceneLoader();
             BindCoroutineRunner();
-            BindAssetServices();
         }
 
         private void BindGameStateMachine()
@@ -38,10 +37,6 @@ namespace Scripts.Infrastructure
                 .AsSingle();
         }
 
-        private void BindAssetServices()
-        {
-            Container.Bind<AssetProviderService>().AsSingle();
-        }
     }
 
 }

@@ -17,7 +17,7 @@ namespace Scripts.Infrastructure
         private void OnEnable()
         {
             IExitableState gameLoopState = _gameStateMachine.RegisteredStates[typeof(GameLoopState)];
-            _gameStateMachine.Enter<LoadSceneState, string, IExitableState, bool>("GameLevelOneScene", gameLoopState, true);
+            _gameStateMachine.Enter<LoadSceneState, string, IExitableState, bool>("GameLevelScene", gameLoopState, true);
             DontDestroyOnLoad(this);
         }
 
