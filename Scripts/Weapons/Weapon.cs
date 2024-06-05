@@ -21,6 +21,7 @@ namespace Scripts.Weapons
 
         private Rigidbody2D _rigidbody;
 
+
         private void OnTriggerEnter2D(Collider2D collision)
         {
             if (collision.GetComponent<Character>() && 
